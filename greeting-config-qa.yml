@@ -1,1 +1,13 @@
-quoteServiceURL: http://quote-service-qa.cfapps.io/quot
+security:   
+  basic:     
+    enabled: false # turn of securing our application endpoints 
+management:  
+  security:     
+    enabled: false # turn of securing the actuator endpoints
+logging: # <----New sections below
+  level:     
+    io:       
+      pivotal: DEBUG
+greeting:
+  displayFortune: true 
+quoteServiceURL: http://quote-service-qa.cfapps.io/quote
